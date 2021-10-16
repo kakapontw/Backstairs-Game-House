@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/moment-timezone-with-data.js"></script>
+    <script type="text/javascript" src="js/papaparse.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/extension.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="background-color: #0B0D1A;">
+                <img class="center-block" style="width: 350px;" src="/img/backstairs.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                <a id="FBbutton" class="btn btn-link" style="background-color: #0B0D1A;"><img src="/img/f_logo_RGB-Blue_72.png" style="width: 20px;"></a>
+                <a id="Youtubebutton" class="btn btn-link" style="background-color: #0B0D1A;"><img src="/img/youtube_social_icon_red.png" style="width: 20px;"></a>
+                <a id="Discordbutton" class="btn btn-link" style="background-color: #0B0D1A;"><img src="/img/icon_clyde_blurple_RGB.png" style="width: 20px;"></a>
+                <div class="btn-group" style="background-color: #0B0D1A;">
+                    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        <img src="/img/link.png" style="width: 20px;"><span class="caret" style="margin-left: 5px;"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a id="JTBackstairsbutton"><b> JT官網貝克介紹 </b></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a id="IGbutton"><b> 貝克IG </b></a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a id="Shopeebutton"><b> 光頭的陽台賣場 </b></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                <a id="Twitchbutton" class="btn btn-link" style="background-color: #9147FF;">
+                    <span id="twitchbadge" class="badge" style="background-color: red; margin-right: 10px;"></span>
+                    <img src="/img/TwitchGlitchBlackOps.png" style="width: 18px; margin-right: 5px;">
+                    <b style="color: whitesmoke;">#slrabbit99 </b>
+                    <span id="twitchbadge2" class="badge" style="margin-left: 5px; background-color: #333333;"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <ul class="nav nav-tabs" role="tablist" id="myTabs">
+                <li role="presentation" class="active"><a href="#message" aria-controls="message" role="tab" data-toggle="tab"><b>Message</b></a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="message">
+                    <table class="table table-striped" style="margin-bottom: 0px;"> 
+                        <thead>
+                            <tr>
+                                <th class="history text-center" style="width:10px;">#</th>
+                                <th class="history text-center" style="width:100px;">Time</th>
+                                <th class="history text-center">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td id="time1" class="text-center"></td>
+                                <td id="m1" class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td id="time2" class="text-center"></td>
+                                <td id="m2" class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td id="time3" class="text-center"></td>
+                                <td id="m3" class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td id="time4" class="text-center"></td>
+                                <td id="m4" class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td id="time5" class="text-center"></td>
+                                <td id="m5" class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td id="time6" class="text-center"></td>
+                                <td id="m6" class="text-center"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">7</td>
+                                <td id="time7" class="text-center"></td>
+                                <td id="m7" class="text-center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+
+</html>
