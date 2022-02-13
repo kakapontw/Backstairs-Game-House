@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Backstairs Game House",
     "description": "藍藍幫大勝利",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "permissions": [
         "alarms",
         "storage",
