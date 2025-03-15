@@ -1,20 +1,22 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Backstairs Game House",
     "description": "藍藍幫大勝利",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "permissions": [
         "alarms",
         "storage",
         "notifications",
-        "webNavigation",
+        "webNavigation"
+    ],
+    "host_permissions": [
         "*://*.twitch.tv/*",
         "https://spreadsheets.google.com/*"
     ],
     "options_ui":
     {
         "page": "options.html",
-        "chrome_style": true
+        "open_in_tab": false
     },
     "content_scripts": [
         {
@@ -23,12 +25,11 @@
           "run_at" : "document_idle"
         }
     ],
-    "background":
-    {
-        "page": "background.html",
-        "persistent": true
+    "background": {
+        "service_worker": "/js/background.js",
+        "type": "module"
     },
-    "browser_action":
+    "action":
     {
         "default_title": "守時是我的座右銘",
         "default_icon": "/img/j8.png",

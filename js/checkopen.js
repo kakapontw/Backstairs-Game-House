@@ -17,8 +17,8 @@ chrome.storage.sync.get({
     if (items.getOpen) {
         chrome.alarms.create('openAlarm', alarmInfo);
         notificationPoint = 1;
-        // chrome.browserAction.setBadgeText({ text: "" });
-        chrome.browserAction.setIcon({path: "/img/j8.png"});
+        // chrome.action.setBadgeText({ text: "" });
+        chrome.action.setIcon({path: "/img/j8.png"});
         chrome.storage.local.set({ "OpenNotification": false }, function() {});
         setTimeout(function() { checkOpen(); }, 2000);
     }
@@ -32,8 +32,8 @@ chrome.storage.onChanged.addListener(function(changes, areaName) {
             chrome.storage.local.set({ "OpenNotification": false }, function() {});
             checkOpen();
         } else {
-            // chrome.browserAction.setBadgeText({ text: "" });
-            chrome.browserAction.setIcon({path: "/img/j8.png"});
+            // chrome.action.setBadgeText({ text: "" });
+            chrome.action.setIcon({path: "/img/j8.png"});
             chrome.alarms.clearAll();
         }
     } else if (changes.OpenNotification) {
@@ -56,12 +56,12 @@ function checkOpen() {
     }).then(result => {
         if (result != null) {
             if (result.stream != null) {
-                chrome.browserAction.setIcon({path: "/img/7.png"});
+                chrome.action.setIcon({path: "/img/7.png"});
                 notificationTitle = result.stream.channel.status;
                 notificationMessage = "阿貝開台囉 點這前往實況台";
                 chrome.storage.local.set({ "OpenNotification": true }, function() {});
             } else {
-                chrome.browserAction.setIcon({path: "/img/j8.png"});
+                chrome.action.setIcon({path: "/img/j8.png"});
                 chrome.storage.local.set({ "OpenNotification": false }, function() {});
             }
         }

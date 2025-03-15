@@ -30,9 +30,9 @@ function save_options() {
 function restore_options() {
     //利用get設定預設值並，無值即取得預設置，有值則使用之前儲存的值
     chrome.storage.sync.get({
-        getChat: true,
-        getOpen: true,
-        getSound: true,
+        getChat: false,
+        getOpen: false,
+        getSound: false,
         getSoundVersion: false
     }, function(items) {
         document.getElementById('getChat').checked = items.getChat;

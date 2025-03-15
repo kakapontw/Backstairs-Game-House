@@ -3,9 +3,8 @@
     buttonMap.set("FBbutton", "https://www.facebook.com/YoBackstairs");
     buttonMap.set("Youtubebutton", "https://www.youtube.com/channel/UC_H6Ftt07JKBqqRPniByL8w");
     buttonMap.set("Discordbutton", "https://discord.com/invite/euEBd9Y");
-    buttonMap.set("JTBackstairsbutton", "http://www.jy-ents.com/broadcaster_detail.html?cid=0&id=7a0562d0-4719-4167-93f6-9a69026222a5");
     buttonMap.set("IGbutton", "https://www.instagram.com/backstairs.tw/");
-    buttonMap.set("Shopeebutton", "https://shopee.tw/shop/30297957/search?page=0&sortBy=ctime");
+    buttonMap.set("Shopbutton", "https://myship.7-11.com.tw/general/detail/GM2112080894808");
     buttonMap.set("Twitchbutton", "https://www.twitch.tv/slrabbit99");
     buttonMap.forEach((buttonUrl, buttonName)=>{
         var button = document.getElementById(buttonName);
