@@ -8,7 +8,7 @@
 ### 目前包含：
 - Facebook、Youtube、Discord等等相關資訊連結
 - ~~圖奇開台通知~~ (1.0.1版移除此功能)
-- 聊天室資訊
+- ~~聊天室資訊~~ (2.0.0版移除此功能)
 - 提供礦鎬 (自動點擊"光頭點數"額外獎勵)
 
 ### 使用者隱私聲明：
@@ -30,6 +30,13 @@
 * Notification icon made by Darius Dan from www.flaticon.com, licensed under CC BY 3.0
 
 ### 更新資訊：
+<h4>2.0.0</h4>
+<p><strong>遷移至 Chrome Exextensions v3 版本</strong></p>
+<p><strong>1. 因應 v3 版本底層多樣功能變動，目前只保留 popup 頁面及挖礦功能，其他功能目前不想使用替代方式，就先關掉了</strong></p>
+<p></p>
+<p><strong>本次更新主要是服務廣大的礦工們，本來想說 Chrome Exextensions 大更新，就讓這些老套件自然凋零，但有人還是有需求，就盡量維持基本功能</strong></p>
+<p><strong>之後有時間再來研究看看其他功能，但別抱太大期待QQ，因為部分功能有很多工具可以取代了，用套件做價值不高</strong></p>
+<hr>
 <h4>1.0.1</h4>
 <p><strong>終止開台通知服務，來因應以下變更</strong></p>
 <p><strong>1. 舊版 Twitch API v5 已棄用，並計劃於 2022/02/28 停用</strong></p>

@@ -3,7 +3,7 @@ chrome.runtime.onInstalled.addListener(function() {
 });
 
 chrome.runtime.onStartup.addListener(function() {
-    chrome.browserAction.setBadgeText({ text: "" });
+    chrome.action.setBadgeText({ text: "" });
     chrome.storage.sync.set({ "OpenNotification": false }, function() {});
 });
 
